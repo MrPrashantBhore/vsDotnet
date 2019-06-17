@@ -1,0 +1,372 @@
+
+iet63@IET57 MINGW64 ~
+$ git --version
+git version 2.20.1.windows.1
+
+iet63@IET57 MINGW64 ~
+$ mkdir Aniket
+
+iet63@IET57 MINGW64 ~
+$ cd Aniket
+
+iet63@IET57 MINGW64 ~/Aniket
+$ git init
+Initialized empty Git repository in C:/Users/iet63/Aniket/.git/
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ vim Aniket.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git add Aniket.txt
+warning: LF will be replaced by CRLF in Aniket.txt.
+The file will have its original line endings in your working directory
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git commit -m "File Added"
+[master (root-commit) 3e51e76] File Added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Aniket.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git remote add origin https://github.com/aniket7058/Aniket.git
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git remote -v
+origin  https://github.com/aniket7058/Aniket.git (fetch)
+origin  https://github.com/aniket7058/Aniket.git (push)
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push  origin master
+remote: Permission to aniket7058/Aniket.git denied to Rashmi0319.
+fatal: unable to access 'https://github.com/aniket7058/Aniket.git/': The requested URL returned error: 403
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push  origin master
+remote: Permission to aniket7058/Aniket.git denied to Rashmi0319.
+fatal: unable to access 'https://github.com/aniket7058/Aniket.git/': The requested URL returned error: 403
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push -u origin master
+remote: Permission to aniket7058/Aniket.git denied to Rashmi0319.
+fatal: unable to access 'https://github.com/aniket7058/Aniket.git/': The requested URL returned error: 403
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config --global --unset Rashmi.name
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config --global --unset Rashmi.email
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push  origin master
+remote: Permission to aniket7058/Aniket.git denied to Rashmi0319.
+fatal: unable to access 'https://github.com/aniket7058/Aniket.git/': The requested URL returned error: 403
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config --global --unset Rashmi0319
+error: key does not contain a section: Rashmi0319
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config --global --unset user.Rashmi0319
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push  origin master
+remote: Permission to aniket7058/Aniket.git denied to Rashmi0319.
+fatal: unable to access 'https://github.com/aniket7058/Aniket.git/': The requested URL returned error: 403
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config Rashmi.name
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config Rashmi.email
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push  origin master
+remote: Permission to aniket7058/Aniket.git denied to Rashmi0319.
+fatal: unable to access 'https://github.com/aniket7058/Aniket.git/': The requested URL returned error: 403
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config --system --unset user.name
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config --system --unset credential.helper
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config Aniket.name
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config Aniket@.email
+error: invalid key: Aniket@.email
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git config Aniket.email
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push origin master
+Username for 'https://github.com': aniket7058
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/aniket7058/Aniket.git
+ * [new branch]      master -> master
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push origin master
+Username for 'https://github.com': aniket7058
+Everything up-to-date
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git push origin master
+Username for 'https://github.com': aniket7058
+Everything up-to-date
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/aniket7058/Aniket
+ * branch            master     -> FETCH_HEAD
+   3e51e76..04306b4  master     -> origin/master
+Updating 3e51e76..04306b4
+Fast-forward
+ Aniket.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git commit -m "First"
+On branch master
+nothing to commit, working tree clean
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ vim First.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git add First.txt
+warning: LF will be replaced by CRLF in First.txt.
+The file will have its original line endings in your working directory
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git commit -m "First"
+[master 609eafc] First
+ 1 file changed, 1 insertion(+)
+ create mode 100644 First.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ vim Second.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git commit -m "Second"
+On branch master
+Untracked files:
+        Second.txt
+
+nothing added to commit but untracked files present
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git add Second.txt
+warning: LF will be replaced by CRLF in Second.txt.
+The file will have its original line endings in your working directory
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git commit -m "Second"
+[master 80d0016] Second
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Second.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git log
+commit 80d0016b2bd975019f13682f43605750deecc891 (HEAD -> master)
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:57 2019 +0530
+
+    Second
+
+commit 609eafc22dbd1b91cdedf23afa2dd22847dc1f81
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:02 2019 +0530
+
+    First
+
+commit 04306b4114d28e3c6a15a4dd1bd8dd0e10507707 (origin/master)
+Author: aniket7058 <51280991+aniket7058@users.noreply.github.com>
+Date:   Sat Jun 15 16:49:01 2019 +0530
+
+    Update Aniket.txt
+
+commit 3e51e76df8bb549c6db1f6bc351e4626ac39bcea
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 16:40:52 2019 +0530
+
+    File Added
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git branch FirstBranch
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git checkout FirstBranch
+Switched to branch 'FirstBranch'
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ vim third.txt
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ git add third.txt
+warning: LF will be replaced by CRLF in third.txt.
+The file will have its original line endings in your working directory
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ git commit -m "Third"
+[FirstBranch 943db48] Third
+ 1 file changed, 1 insertion(+)
+ create mode 100644 third.txt
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ git log
+commit 943db48bc102ceb6404652dfb898cacf72e5f269 (HEAD -> FirstBranch)
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:21:53 2019 +0530
+
+    Third
+
+commit 80d0016b2bd975019f13682f43605750deecc891 (master)
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:57 2019 +0530
+
+    Second
+
+commit 609eafc22dbd1b91cdedf23afa2dd22847dc1f81
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:02 2019 +0530
+
+    First
+
+commit 04306b4114d28e3c6a15a4dd1bd8dd0e10507707 (origin/master)
+Author: aniket7058 <51280991+aniket7058@users.noreply.github.com>
+Date:   Sat Jun 15 16:49:01 2019 +0530
+
+    Update Aniket.txt
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ git merge master
+Already up to date.
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ git merge FirstBranch
+Already up to date.
+
+iet63@IET57 MINGW64 ~/Aniket (FirstBranch)
+$ git checkout master
+Switched to branch 'master'
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git log
+commit 80d0016b2bd975019f13682f43605750deecc891 (HEAD -> master)
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:57 2019 +0530
+
+    Second
+
+commit 609eafc22dbd1b91cdedf23afa2dd22847dc1f81
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:02 2019 +0530
+
+    First
+
+commit 04306b4114d28e3c6a15a4dd1bd8dd0e10507707 (origin/master)
+Author: aniket7058 <51280991+aniket7058@users.noreply.github.com>
+Date:   Sat Jun 15 16:49:01 2019 +0530
+
+    Update Aniket.txt
+
+commit 3e51e76df8bb549c6db1f6bc351e4626ac39bcea
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 16:40:52 2019 +0530
+
+    File Added
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git merge FirstBranch
+Updating 80d0016..943db48
+Fast-forward
+ third.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 third.txt
+
+iet63@IET57 MINGW64 ~/Aniket (master)
+$ git log
+commit 943db48bc102ceb6404652dfb898cacf72e5f269 (HEAD -> master, FirstBranch)
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:21:53 2019 +0530
+
+    Third
+
+commit 80d0016b2bd975019f13682f43605750deecc891
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:57 2019 +0530
+
+    Second
+
+commit 609eafc22dbd1b91cdedf23afa2dd22847dc1f81
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:02 2019 +0530
+
+    First
+
+commit 04306b4114d28e3c6a15a4dd1bd8dd0e10507707 (origin/master)
+Author: aniket7058 <51280991+aniket7058@users.noreply.github.com>
+Date:   Sat Jun 15 16:49:01 2019 +0530
+
+    Update Aniket.txt
+:...skipping...
+commit 943db48bc102ceb6404652dfb898cacf72e5f269 (HEAD -> master, FirstBranch)
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:21:53 2019 +0530
+
+    Third
+
+commit 80d0016b2bd975019f13682f43605750deecc891
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:57 2019 +0530
+
+    Second
+
+commit 609eafc22dbd1b91cdedf23afa2dd22847dc1f81
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 17:19:02 2019 +0530
+
+    First
+
+commit 04306b4114d28e3c6a15a4dd1bd8dd0e10507707 (origin/master)
+Author: aniket7058 <51280991+aniket7058@users.noreply.github.com>
+Date:   Sat Jun 15 16:49:01 2019 +0530
+
+    Update Aniket.txt
+
+commit 3e51e76df8bb549c6db1f6bc351e4626ac39bcea
+Author: Rashmi <Rashmi@gmail.com>
+Date:   Sat Jun 15 16:40:52 2019 +0530
+
+    File Added
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
